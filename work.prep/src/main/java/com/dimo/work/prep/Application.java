@@ -6,8 +6,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		SpringApplication.run(Application.class, args);
+		System.out.println("App Running...");
+		System.out.println("Hello");
+		Thread.sleep(10000);
+		System.out.println("App shutting down in 10 seconds...");
+		Thread.sleep(5000);
+		for(int i = 0; i < 5; i++)
+		{
+			System.out.println("App shutting down in " + i);
+		}
+		System.out.println("Goodbye");
 	}
 
 }
