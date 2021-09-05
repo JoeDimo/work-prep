@@ -3,4 +3,3 @@ ADD target/workprep.jar workprep.jar
 COPY ./pom.xml ./pom.xml
 COPY ./src ./src
 ENTRYPOINT ["mvn", "spring-boot:run"]
-#ENTRYPOINT ["java", "-jar", "workprep.jar"]
