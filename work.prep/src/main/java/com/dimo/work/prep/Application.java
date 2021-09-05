@@ -13,9 +13,10 @@ public class Application {
 		Thread.sleep(10000);
 		System.out.println("App shutting down in 10 seconds...");
 		Thread.sleep(5000);
-		for(int i = 0; i < 5; i++)
+		for(int i = 5; i > 0; i--)
 		{
 			System.out.println("App shutting down in " + i);
+			Thread.sleep(1000);
 		}
 		System.out.println("Goodbye");
 	}
